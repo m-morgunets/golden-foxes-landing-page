@@ -1,0 +1,128 @@
+/* autoprefixer grid: autoplace */
+
+.rarity {
+  padding-top: 125px;
+}
+.rarity__title {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.rarity__inner {
+  display: none;
+}
+.rarity-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.rarity__lines {
+  text-align: center;
+}
+.rarity__lines-line {
+  width: 80.8%;
+  // padding: 0 115px;
+}
+.rarity__lines-text {
+  max-width: 900px;
+  margin: 50px auto;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 100;
+}
+.rarity__lines-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.rarity__lines-item {
+  max-width: 230px;
+  width: 100%;
+  opacity: 0.5;
+  &:nth-child(1) img {
+    width: 80.8%;
+  }
+  &:nth-child(2) img {
+    width: 65.6%;
+  }
+  &:nth-child(3) img {
+    width: 50.8%;
+  }
+  &:nth-child(4) img {
+    width: 35.6%;
+  }
+  &:nth-child(5) img {
+    width: 20.8%;
+  }
+}
+@media (max-width: 1050px) {
+  .rarity {
+    padding-top: 100px;
+  }
+  .rarity__title {
+    margin-bottom: 70px;
+  }
+  .rarity__lines-text {
+    font-size: 22px;
+    line-height: 35px;
+    max-width: 670px;
+    margin: 35px auto;
+  }
+  .rarity__lines-box {
+    margin-top: 25px;
+  }
+  .rarity-box {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .rarity .container {
+    padding: 0 10px;
+  }
+  .rarity-box,
+  .rarity__lines-line,
+  .rarity__lines-box {
+    display: none;
+  }
+  .rarity__inner {
+    display: block;
+  }
+  .rarity__inner-box {
+    display: flex;
+    width: 100%;
+    margin-right: 9px;
+  }
+  .rarity__inner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + & {
+      margin-top: 9px;
+    }
+    &:nth-child(2) img {
+      width: 66%;
+    }
+    &:nth-child(3) img {
+      width: 30%;
+    }
+  }
+  .rarity__inner-img {
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .rarity__lines-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .rarity__title {
+    margin-bottom: 40px;
+    // font-size: 32px;
+  }
+}

@@ -1,0 +1,47 @@
+/* autoprefixer grid: autoplace */
+
+.materials-inner {
+  padding: 55px 0;
+  border-bottom: 1px solid #292929;
+  border-top: 1px solid #292929;
+}
+.materials__title {
+  font-size: 40px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 80px;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+.materials__subtitle {
+  font-size: 21px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 40px;
+  opacity: 0.4;
+}
+.materials-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+  padding-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .materials-inner {
+    padding: 30px 0;
+  }
+  .materials__subtitle {
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .materials-box {
+    padding-top: 20px;
+  }
+  .materials__title {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+}

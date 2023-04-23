@@ -1,0 +1,131 @@
+/* autoprefixer grid: autoplace */
+
+.info {
+  margin: 300px 0 35px;
+  padding-top: 100px;
+}
+.info-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__img {
+  max-width: 565px;
+  display: block;
+}
+.info__content {
+  padding-left: 45px;
+}
+.info__content-title {
+  line-height: 44px;
+  margin-bottom: 55px;
+}
+.info__content-text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #a6a6a6;
+  span {
+    font-weight: 900;
+  }
+  svg {
+    margin-right: 18px;
+  }
+}
+.info__content-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 60px;
+}
+.info__content-item {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+  &__title {
+    margin-left: 40px;
+  }
+  img {
+    width: 160px;
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info {
+    margin-top: 200px;
+    padding-top: 100px;
+  }
+  .info__content-title {
+    // font-size: 36px;
+    // line-height: 39px;
+    margin-bottom: 35px;
+  }
+  .info__content {
+    padding-left: 20px;
+  }
+  .info__content-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .info__content-box {
+    margin: 20px 0 30px;
+  }
+  .info__content-item {
+    img {
+      width: 140px;
+    }
+  }
+  .info__content-item {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .info__img {
+    height: 630px;
+  }
+}
+@media (max-width: 1000px) {
+  .info {
+    margin-top: 150px;
+    padding-top: 50px;
+  }
+  .info-inner {
+    display: block;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .info__content {
+    padding-left: 0;
+  }
+  .info__img {
+    height: unset;
+    max-width: 100%;
+  }
+  .info__content {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 470px) {
+  .info {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .info__content-box {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .info__content-item img {
+    width: 190px;
+    margin-right: 30px;
+  }
+  .info__content-item__title {
+    margin-left: 0;
+  }
+}
+@media (max-width: 380px) {
+  .info__content-text svg {
+    display: none;
+  }
+}
