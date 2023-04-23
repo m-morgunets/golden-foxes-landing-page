@@ -1,1 +1,1 @@
-# golden-foxes-landing-page
+# Лендинг Golden Foxes
